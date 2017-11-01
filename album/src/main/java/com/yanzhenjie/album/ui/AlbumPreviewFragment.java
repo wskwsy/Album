@@ -15,7 +15,6 @@
  */
 package com.yanzhenjie.album.ui;
 
-import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
@@ -30,7 +29,6 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.yanzhenjie.album.Album;
 import com.yanzhenjie.album.AlbumFile;
 import com.yanzhenjie.album.R;
@@ -39,7 +37,6 @@ import com.yanzhenjie.album.ui.adapter.AlbumFilePreviewAdapter;
 import com.yanzhenjie.album.ui.adapter.BasicPreviewAdapter;
 import com.yanzhenjie.album.util.AlbumUtils;
 import com.yanzhenjie.fragment.NoFragment;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -101,8 +98,9 @@ public class AlbumPreviewFragment extends NoFragment {
     }
 
     private void initializeWidget() {
-        ColorStateList itemSelector = mWidget.getMediaItemCheckSelector();
-        mCheckBox.setSupportButtonTintList(itemSelector);
+        //ColorStateList itemSelector = mWidget.getMediaItemCheckSelector();
+        //mCheckBox.setSupportButtonTintList(itemSelector);
+        //mCheckBox.setButtonTintList(itemSelector);
 
         mCheckBox.setOnClickListener(new View.OnClickListener() {
             @Override
